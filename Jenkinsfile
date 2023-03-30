@@ -25,7 +25,7 @@ pipeline {
                       
                       bat 'docker push maheshhalkanche/jenkins-docker-example:latest'
 			      
-		      bat 'docker run  maheshhalkanche/jenkins-docker-example:latest'     
+		       
 }
                  }
              }
