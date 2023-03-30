@@ -24,6 +24,8 @@ pipeline {
                       bat 'docker login -u maheshhalkanche -p M@hesh111 '
                       
                       bat 'docker push maheshhalkanche/jenkins-docker-example:latest'
+			      
+		      bat 'docker run -p 8080:8080 maheshhalkanche/jenkins-docker-example:latest'     
 }
                  }
              }
