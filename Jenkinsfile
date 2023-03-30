@@ -6,7 +6,7 @@ pipeline {
             steps{
 		 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'b02b81e0-ffde-4d4e-bbde-27de576dc6a6', url: 'https://github.com/MaheshHalkanch/jenkins-docker-example.git']]])
              bat 'mvn clean package'
-             echo "build successfully"
+             echo "build successfully _now THIS SCRIPT IS BEING USED FROM git"
                 
             }
          }
